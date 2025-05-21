@@ -8,7 +8,7 @@ namespace Multimeter
 
         protected MultimeterModel _multimeter;
 
-        public PhysicalQuantityType PhysicalQuantityType { get; set; }
+        public PhysicalQuantityType PhysicalQuantityType { get; private set; }
 
         protected MultimeterState(MultimeterModel multimeter, PhysicalQuantityType multimeterStateType) : base(multimeter)
         {
@@ -29,6 +29,6 @@ namespace Multimeter
 
         public abstract void OnSwitcherScrolled(bool isForward);
 
-        public abstract void Calculate();
+        protected abstract void Calculate();
     }
 }
