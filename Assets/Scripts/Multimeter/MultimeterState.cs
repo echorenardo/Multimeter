@@ -10,10 +10,10 @@ namespace Multimeter
 
         public PhysicalQuantityType PhysicalQuantityType { get; private set; }
 
-        protected MultimeterState(MultimeterModel multimeter, PhysicalQuantityType multimeterStateType) : base(multimeter)
+        protected MultimeterState(MultimeterModel multimeter, PhysicalQuantityType physicalQuantityType) : base(multimeter)
         {
             _multimeter = multimeter;
-            PhysicalQuantityType = multimeterStateType;
+            PhysicalQuantityType = physicalQuantityType;
         }
 
         public override void OnEnter()
