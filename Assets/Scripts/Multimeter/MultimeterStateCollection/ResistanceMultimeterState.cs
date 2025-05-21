@@ -1,5 +1,3 @@
-using System;
-
 namespace Multimeter
 {
     public class ResistanceMultimeterState : MultimeterState
